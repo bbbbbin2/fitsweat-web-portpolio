@@ -1,0 +1,123 @@
+/* 전체 레이아웃을 3배 더 넓게 수정 */
+.newrecord-container {
+  width: 100%;
+  max-width: 15000px; /* 최대 너비를 크게 설정 (기존 5000px에서 3배 늘림) */
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 스타일 */
+.newrecord-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4c5c35;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* 로고 스타일 */
+.newrecord-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* 로고 부분 글자 크기 */
+.newrecord-header-right {
+  font-size: 1.5em;
+}
+
+/* 폼 영역 스타일 */
+.newrecord-form {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 9000px; /* 기존 3000px에서 3배 늘림 */
+  margin: 0 auto;
+}
+
+/* 폼 그룹 */
+.newrecord-form-group {
+  margin-bottom: 5px;
+}
+
+/* 폼 그룹 레이블 */
+.newrecord-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 입력란 스타일 */
+.newrecord-form-group input,
+.newrecord-form-group select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* 운동 종류 컨테이너 */
+.exercise-type-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 70%; /* 운동 종류 박스도 전체 너비에 맞게 */
+  margin-bottom: 5px;
+}
+
+
+/* 운동 종류 select 박스 */
+.exercise-type-container select {
+  width: 90%;
+  padding: 8px 12px; /* 높이를 줄이기 위해 패딩 조정 */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+
+/* 검색 버튼 스타일 */
+.search-button {
+  background: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin-left: auto; /* 오른쪽 끝으로 정렬 */
+}
+
+
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7일 */
+  gap: 5px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.empty {
+  visibility: hidden; /* 빈 칸을 숨김 */
+}

@@ -1,0 +1,96 @@
+/* Modify.css - 게시물 수정 페이지 스타일 */
+
+/* 전체 페이지 스타일 */
+.modify-page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 헤더 스타일 */
+  .modify-header {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* 오류 메시지 스타일 */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* 폼 스타일 */
+  .modify-form {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* 폼 그룹 스타일 */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .modify-input, .modify-textarea, .modify-file-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .modify-input:focus, .modify-textarea:focus, .modify-file-input:focus {
+    border-color: #45a049;
+  }
+  
+  /* 텍스트 영역 스타일 */
+  .modify-textarea {
+    resize: none;
+    height: 200px;
+  }
+  
+  /* 이미지 미리보기 스타일 */
+  .image-preview {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  /* 제출 버튼 스타일 */
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  

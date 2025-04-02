@@ -1,0 +1,219 @@
+/* ProfileEditPage.css - 프로필 수정 페이지 전용 스타일, 다른 CSS 코드와의 충돌 방지 */
+
+/* 전체 컨테이너 설정 */
+.profile-edit-page .profile-page-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* 스크롤 방지 */
+    box-sizing: border-box;
+}
+
+/* 헤더 설정 */
+.profile-edit-page .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 3px solid #6b8e23;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 로고 이미지 스타일 */
+.profile-edit-page .logo {
+    max-height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+/* 로그아웃 버튼 스타일 */
+.profile-edit-page .logout {
+    font-size: 14px;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 20px;
+}
+
+.profile-edit-page .logout:hover {
+    color: #d9534f;
+}
+
+/* 메인 컨텐츠 영역 - 가로 배치 */
+.profile-edit-page .profile-main-content {
+    display: flex;
+    gap: 40px; /* 카드 간 간격 */
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start; /* 위쪽 정렬 */
+    flex-wrap: nowrap; /* 가로 배치 유지 */
+    height: calc(100vh - 70px); /* 헤더 높이 제외 */
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* 프로필 카드 설정 */
+.profile-edit-page .profile-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 280px; /* 너비 줄임 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; /* 가로 배치 시 카드 크기 고정 */
+}
+
+/* 프로필 사진 설정 */
+.profile-edit-page .profile-picture {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.profile-edit-page .profile-picture .picture-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-edit-page .profile-picture .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 파일 업로드 입력 스타일 */
+.profile-edit-page .upload-input {
+    margin-top: 8px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 프로필 디테일 입력 부분 */
+.profile-edit-page .profile-details {
+    text-align: center;
+    width: 100%;
+}
+
+.profile-edit-page .profile-label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.profile-edit-page .profile-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 저장 버튼 스타일 */
+.profile-edit-page .save-button {
+    padding: 10px 20px;
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-edit-page .save-button:hover {
+    background-color: #6b8e23;
+    transform: translateY(-2px);
+}
+
+/* 정보 섹션 설정 */
+.profile-edit-page .profile-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 280px; /* 너비 줄임 */
+    flex-shrink: 0; /* 카드 크기 고정 */
+}
+
+.profile-edit-page .card {
+    background-color: #e9f5e9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-edit-page .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-edit-page .info-row, .profile-edit-page .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile-edit-page .info-label, .profile-edit-page .info-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.profile-edit-page .info-value {
+    color: #556b2f;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* 프로필 공개 설정 섹션 */
+.profile-edit-page .profile-visibility {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.profile-edit-page .visibility-options label {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.profile-edit-page .visibility-options input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+

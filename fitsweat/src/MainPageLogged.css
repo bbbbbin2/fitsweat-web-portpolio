@@ -1,0 +1,175 @@
+/* MainPageLogged.css - 로그인 후 메인 페이지 전용 스타일, 다른 CSS 코드와의 충돌 방지 */
+
+/* 메인 컨테이너 스타일 - 페이지 중앙에 정렬, 배경색 지정 */
+.main-logged-page .main-container {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 상단 헤더 스타일 - 중앙에 로고 및 검색창 배치 */
+.main-logged-page .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 2px solid #556b2f;
+}
+
+/* 로고 이미지 스타일 - 중앙 배치 */
+.main-logged-page .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-logged-page .logo {
+    height: 50px;
+}
+
+/* 사용자 옵션 (로그아웃) 스타일 */
+.main-logged-page .user-options {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* 내비게이션 바 스타일 - 각 메뉴 아이템 정렬 */
+.main-logged-page .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #556b2f; /* 내비게이션 배경색 */
+    color: #ffffff !important; /* 텍스트 흰색으로 설정 */
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+/* 내비게이션 아이템 - 메뉴 간의 간격과 호버 효과 추가 */
+.main-logged-page .nav-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff !important;
+}
+
+.main-logged-page .nav-item:hover {
+    background-color: #6b8f3f; /* 호버 시 배경색 변경 */
+}
+
+/* 서브 메뉴 스타일 - 드롭다운 메뉴 설정 */
+.main-logged-page .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #dfe7d9;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1;
+}
+
+.main-logged-page .sub-menu-item {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.main-logged-page .sub-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 광고 슬라이더 스타일 - 가운데 정렬 및 가독성 향상 */
+.main-logged-page .slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 350px;
+    background-color: #b3e5fc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.main-logged-page .ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-logged-page .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.main-logged-page .slider-button.left {
+    left: 10px;
+}
+
+.main-logged-page .slider-button.right {
+    right: 10px;
+}
+
+/* 콘텐츠 섹션 스타일 - 섹션 간 균형 있게 배치 */
+.main-logged-page .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 콘텐츠 박스 간 간격 추가 */
+    justify-content: center;
+    margin: 20px;
+}
+
+.main-logged-page .content-box {
+    width: 80%; /* 광고 슬라이더와 동일한 너비 설정 */
+    max-width: 1000px; /* 광고 슬라이더의 최대 너비와 일치 */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.main-logged-page .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-logged-page h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.main-logged-page .add-button {
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.main-logged-page .content-item {
+    border: 1px solid #556b2f;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+}

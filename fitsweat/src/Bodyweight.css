@@ -1,0 +1,107 @@
+.bodyweight-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.bodyweight-header {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.bodyweight-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodyweight-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.bodyweight-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 auto;
+}
+
+.exercise-list,
+.selected-exercise,
+.exercise-description,
+.exercise-video {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #d0e4b5;
+}
+
+.exercise-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-item {
+  padding: 12px;
+  margin: 5px 0;
+  background-color: #d0e4b5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exercise-item:hover {
+  background-color: #b8d1a3;
+}
+
+.selected-exercise p,
+.exercise-description p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.exercise-video {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} 
+
+h2 {
+  font-size: 1.3rem;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  font-weight: bold;
+} 
+
+p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+} 
+
+@media (max-width: 600px) {
+  .bodyweight-container {
+    padding: 15px;
+  }
+
+  .bodyweight-title {
+    font-size: 1.5rem;
+  }
+
+  .exercise-video {
+    height: 200px;
+  }
+}

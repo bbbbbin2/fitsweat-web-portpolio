@@ -1,0 +1,124 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.signup-form {
+  width: 400px;
+  border: 2px solid #556b2f;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #556b2f;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.check-button {
+  background-color: #556b2f; /* 초록색으로 변경 */
+  color: white;
+  border: none;
+  height: 33px; /* 높이 유지 */
+  width: 50%; /* 가로로 크게 설정 */
+  border-radius: 5px;
+  margin-left: 10px; /* 아이디 입력창과의 간격 추가 */
+  font-size: 16px; /* 글씨 크기 증가 */
+  cursor: pointer; /* 커서 스타일 변경 */
+  padding: 0; /* 내부 여백 조정 */
+  display: flex; /* flex 속성을 사용하여 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.signup-button {
+  background-color: #556b2f; /* 초록색 */
+  color: white;
+  border: none;
+  padding: 12px 20px; /* 가로 길이 증가 */
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* 가로로 길게 만들기 */
+  font-size: 16px;
+}
+
+.success-message {
+  color: green;
+  font-size: 12px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.name-gender-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender-select {
+  flex: 1;
+  margin-left: 10px; /* 이름과 성별 선택 사이의 간격 추가 */
+  width: 90%;
+}
+
+.complete-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.complete-box {
+  width: 400px;
+  padding: 40px;
+  border: 2px solid #556b2f;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.complete-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.complete-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.complete-submessage {
+  font-size: 14px;
+  color: #888;
+}

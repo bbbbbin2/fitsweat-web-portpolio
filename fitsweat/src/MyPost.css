@@ -1,0 +1,139 @@
+/* MyPost.css - My Post 전용 스타일 */
+
+/* 전체 게시판 컨테이너 스타일 */
+.my-post-board {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f0;
+  padding: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+.my-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.my-post-header h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.my-new-post-button {
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.my-new-post-button:hover {
+  background-color: #45a049;
+}
+
+/* 게시글 목록 스타일 */
+.my-post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 게시글 항목 스타일 */
+.my-post-item {
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.my-post-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  border-bottom: 1px solid #ddd; /* 구분선을 추가 */
+  padding-bottom: 5px; /* 구분선과의 간격 */
+  width: 100%; /* 제목이 전체 너비 차지 */
+}
+
+.my-post-content {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px; /* 제목과 내용 간격 조정 */
+  width: 100%; /* 내용이 전체 너비 차지 */
+}
+
+/* 수정 버튼 스타일 (초록색) */
+.my-edit-button {
+  background-color: #4CAF50; /* 초록색 */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.my-edit-button:hover {
+  background-color: #45a049; /* 호버 시 어두운 초록색 */
+}
+
+/* 삭제 버튼 스타일 */
+.my-delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.my-delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* 매우 작은 메인 페이지 버튼 스타일 */
+.main-page-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-page-button:hover {
+  background-color: #0056b3;
+}
+
+.my-post-image {
+  width: 100%; /* 이미지가 부모 요소 너비에 맞게 조정 */
+  max-width: 300px; /* 이미지 최대 너비를 고정 */
+  max-height: 200px; /* 이미지 최대 높이 고정 */
+  border-radius: 5px;
+  object-fit: cover; /* 고정된 크기에서 비율 유지하며 잘리도록 설정 */
+  margin-top: 10px;
+}

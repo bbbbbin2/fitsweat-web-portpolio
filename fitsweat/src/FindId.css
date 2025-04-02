@@ -1,0 +1,106 @@
+/* FindId.css - 아이디 찾기 페이지 전용 스타일, 다른 CSS 코드와의 충돌 방지 */
+
+/* 전체 페이지 배경색 설정 - 컨테이너 제외한 배경색 지정 */
+.find-id-page {
+  background-color: #F0F0F0; /* 컨테이너 외부 배경색 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 전체 컨테이너 스타일 설정 - 화면 중앙에 배치하고 고정된 크기 유지 */
+.find-id-page .find-id-container, .find-id-page .find-id-result-container {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  max-width: 400px; /* 최대 너비 설정으로 큰 화면에서의 비율 유지 */
+  padding: 20px; /* 내부 여백 */
+  background-color: #f5f5f5; /* 컨테이너 배경색 */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* 폼 및 결과 박스 스타일 설정 - 크기 및 배경색 지정 */
+.find-id-page .find-id-form, .find-id-page .find-id-result-box {
+  width: 100%; /* 부모 컨테이너의 전체 너비 사용 */
+  max-width: 400px;
+  border: 2px solid #556b2f; /* 약간의 녹색 빛깔로 테두리 강조 */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff; /* 흰색 배경으로 가독성 향상 */
+  text-align: center;
+}
+
+/* 로고 스타일 설정 - 적당한 크기로 상단에 배치 */
+.find-id-page .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* 라벨 스타일 설정 - 일관된 크기와 간격 유지 */
+.find-id-page label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* 전화번호와 이메일 입력 필드 스타일 - 전체 너비 사용 및 적절한 간격 설정 */
+.find-id-page input[type="tel"],
+.find-id-page input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #556b2f;
+  border-radius: 5px;
+  box-sizing: border-box; /* 박스 크기를 전체 너비와 패딩을 고려하여 계산 */
+}
+
+/* 아이디 찾기 버튼 스타일 - 녹색 배경과 하얀 글자 */
+.find-id-page .find-id-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #556b2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 아이디 찾기 버튼 호버 효과 - 색상 약간 밝게 변경 */
+.find-id-page .find-id-button:hover {
+  background-color: #6b8f3c; /* 사용자 상호작용 시 피드백 제공 */
+}
+
+/* 결과 메시지 스타일 - 눈에 잘 띄도록 굵게 설정 */
+.find-id-page .result-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 유저 아이디 스타일 - 파란색으로 강조 */
+.find-id-page .user-id {
+  color: blue;
+}
+
+/* 돌아가기 버튼 스타일 - 아이디 찾기 버튼과 유사한 스타일 */
+.find-id-page .back-button {
+  padding: 10px;
+  background-color: #556b2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* 돌아가기 버튼 호버 효과 - 색상 약간 밝게 변경 */
+.find-id-page .back-button:hover {
+  background-color: #6b8f3c;
+}

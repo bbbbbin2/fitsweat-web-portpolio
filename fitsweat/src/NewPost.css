@@ -1,0 +1,94 @@
+/* 전체 페이지 스타일 */
+.new-post-page {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 헤더 스타일 */
+.new-post-header {
+    background-color: #556b2f;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-post-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* 게시물 작성 컨테이너 스타일 (세로 배치로 변경) */
+.new-post-container {
+    display: flex;
+    flex-direction: column; /* 세로 배치 */
+    gap: 20px;
+    max-width: 800px; /* 너비를 줄여 중앙에 배치 */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 게시물 입력 필드 스타일 */
+.post-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.content-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 400px;
+    resize: none;
+}
+
+/* 사진 미리보기 고정 크기 설정 */
+.image-preview {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 게시물 작업 버튼 스타일 */
+.post-actions {
+    display: flex;
+    flex-direction: row; /* 버튼을 가로로 나란히 배치 */
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-upload-button, .submit-button {
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* 버튼이 동일한 너비로 확장 */
+}
+
+.image-upload-button:hover, .submit-button:hover {
+    background-color: #6b8f3f;
+}

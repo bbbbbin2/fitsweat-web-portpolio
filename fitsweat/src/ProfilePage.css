@@ -1,0 +1,171 @@
+/* ProfilePage.css - 프로필 페이지 전용 스타일, 다른 CSS 코드와의 충돌 방지 */
+
+/* 전체 컨테이너 설정 */
+.profile-page .profile-page-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* 스크롤 방지 */
+  box-sizing: border-box;
+}
+
+/* 헤더 설정 */
+.profile-page .profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 3px solid #6b8e23;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 로고 이미지 스타일 */
+.profile-page .logo {
+  max-height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+/* 로그아웃 버튼 스타일 */
+.profile-page .logout {
+  font-size: 14px;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  position: absolute;
+  right: 20px;
+}
+
+.profile-page .logout:hover {
+  color: #d9534f;
+}
+
+/* 메인 컨텐츠 영역 */
+.profile-page .profile-main-content {
+  display: flex;
+  gap: 40px; /* 간격을 키움 */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 70px); /* 헤더 높이 제외 */
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* 프로필 카드 설정 */
+.profile-page .profile-card {
+  background-color: #fff;
+  padding: 30px; /* 내부 패딩 확대 */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 350px; /* 카드 너비 확대 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 프로필 사진 설정 */
+.profile-page .profile-picture {
+  margin-bottom: 20px;
+}
+
+.profile-page .profile-picture .picture-placeholder {
+  width: 200px; /* 사진 크기 확대 */
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 프로필 세부 정보 스타일 */
+.profile-page .profile-details {
+  text-align: center;
+}
+
+.profile-page .profile-name {
+  font-size: 28px; /* 이름 글자 크기 확대 */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.profile-page .profile-username {
+  font-size: 20px; /* 사용자 이름 글자 크기 확대 */
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* 편집 버튼 스타일 */
+.profile-page .edit-button {
+  padding: 15px 30px; /* 버튼 크기 확대 */
+  background-color: #556b2f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px; /* 버튼 글자 크기 확대 */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-page .edit-button:hover {
+  background-color: #6b8e23;
+}
+
+/* 정보 섹션 설정 */
+.profile-page .profile-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px; /* 정보 카드 너비 확대 */
+}
+
+.profile-page .card {
+  background-color: #e9f5e9;
+  padding: 25px; /* 내부 패딩 확대 */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page .section-title {
+  font-size: 22px; /* 섹션 타이틀 글자 크기 확대 */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.profile-page .info-row, .profile-page .info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.profile-page .info-label, .profile-page .info-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px; /* 정보 레이블 글자 크기 확대 */
+}
+
+.profile-page .info-value {
+  color: #556b2f;
+  font-weight: 500;
+  font-size: 18px; /* 정보 값 글자 크기 확대 */
+}
