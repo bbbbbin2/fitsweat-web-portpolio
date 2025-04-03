@@ -11,12 +11,12 @@ import NewPost from './NewPost.js';
 import MyPost from './MyPost.js';
 import Modify from './Modify.js';
 import ViewComment from './ViewComment.js';
-import FitnessRecord from './FitnessRecord';
-import NewRecord from './NewRecord';
-import Stretching from './Stretching';
-import Bodyweight from './Bodyweight';
-import Weight from './Weight';
-import ProfileEditPage from './ProfileEditPage';
+import FitnessRecord from './FitnessRecord.js';
+import NewRecord from './NewRecord.js';
+import Stretching from './Stretching.js';
+import Bodyweight from './Bodyweight.js';
+import Weight from './Weight.js';
+import ProfileEditPage from './ProfileEditPage.js';
 
 function Login({ onLogin }) {
     const [username, setId] = useState('');
