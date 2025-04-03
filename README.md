@@ -14,7 +14,7 @@ Fit = 체력 + 건강, Sweat = 노력 + 성과 뜻을 가진 Fitsweat
 ### back-end
  - 이혜빈
  - 연정호
- - 장기용
+ - 강재용
 
 ## 기술 스택
   - Springboot
