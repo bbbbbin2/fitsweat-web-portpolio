@@ -33,7 +33,7 @@ function Weight() {
         { programName: '데드리프트' },
         { programName: '바벨 업라이트 로우' },
         { programName: '바벨 인클라인 벤치 프레스' },
-        { programName: '바벨 로우(ベント 오버 바벨 로우)' },
+        { programName: '바벨 로우(벤트 오버 바벨 로우)' },
         { programName: '바벨 리버스 컬' },
         { programName: '프리쳐 컬' },
         { programName: '바벨 숄더 프레스(오버헤드 프레스, 밀리터리 프레스)' },

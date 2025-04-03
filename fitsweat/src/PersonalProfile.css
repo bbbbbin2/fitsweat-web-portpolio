@@ -170,3 +170,20 @@
     font-size: 18px; /* 정보 값 글자 크기 확대 */
   }
   
+  /* 프로필 사진 설정 */
+.profile-page .profile-picture {
+  margin-bottom: 20px;
+  position: relative;
+  width: 200px; /* 사진 크기 */
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden; /* 자식 요소가 원 밖으로 나가지 않도록 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page .profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 사진이 원 안에 꽉 차게 */
+  display: block;
+}

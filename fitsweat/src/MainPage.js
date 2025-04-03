@@ -75,6 +75,12 @@ function MainPage({ isLoggedIn, onLogout }) {
           <img src={images[currentImageIndex]} alt="광고 이미지" className="ad-image" />
           <button className="slider-button right" onClick={handleNextImage}>{'>'}</button>
         </div>
+
+        {/* Footer 추가 */}
+        <footer className="main-footer">
+          <p>&copy; 2024 Fitsweat. All rights reserved.</p>
+          <p>S/W Project 문사모: 노수진, 강재용, 연정호, 이혜빈, 박규나</p>
+        </footer>
       </div>
     );
   }
@@ -142,6 +148,13 @@ function MainPage({ isLoggedIn, onLogout }) {
         <img src={images[currentImageIndex]} alt="광고 이미지" className="ad-image" />
         <button className="slider-button right" onClick={handleNextImage}>{'>'}</button>
       </div>
+
+      {/* Footer 추가 */}
+      <footer className="main-footer">
+        <p>&copy; 2024 Fitsweat. All rights reserved.</p>
+        <p>S/W Project 문사모: 노수진, 박규나,강재용, 연정호, 이혜빈</p>
+       
+      </footer>
     </div>
   );
 }
